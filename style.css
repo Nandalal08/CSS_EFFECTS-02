@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url(pictures/efe-kurnaz-RnCPiXixooY-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.wrapper{
+    align-items: center;
+    display: flex;
+    top: 50%;
+   left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+
+}
+.wrapper a{
+    width: 220px;
+    height: 70px;
+    text-decoration: none;
+    border: 1px solid #000;
+    font-size: 22px;
+    text-align: center;
+    line-height: 70px;
+    margin: 10px;
+    color: #000;
+    font-family: sans-serif;
+    position: relative;
+
+}
+.wrapper a span{
+    background:#FAD61D;
+    position: absolute;
+   transition: 0.8 ease-out;
+    
+    z-index: -1;
+}
+
+.wrapper a:hover{
+    color: #FFF;
+    transition: 0.8s;
+}
+.to-right{
+    top: 0;
+    left: 0;
+    width: 0px;
+    height: 70px;
+}
+.wrapper a:hover .to-right{
+    width: 220px;
+    background: #42b883;
+    transition: 0.8s;
+}
+
+.to-left{
+    top: 0;
+    right: 0;
+    width: 0px;
+    height: 70px;
+}
+.wrapper a:hover .to-left{
+    width: 220px;
+    background: #ff7e67;
+    transition: 0.8s;
+}
+
+.to-top{
+    width: 220px;
+    height: 0px;
+    right: 0;
+   bottom: 0;
+   
+}
+.wrapper a:hover .to-top{
+    height: 70px;
+    background: #fda403;
+    transition: 0.8s;
+}
+
+.to-bottom{
+    width: 220px;
+    height: 0px;
+    right: 0;
+    top: 0;
+   
+}
+.wrapper a:hover .to-bottom{
+    height: 70px;
+    background:  red;
+    transition: 0.8s;
+}
+
+.to-diagonal{
+    width: 0px;
+    height: 0px;
+    left: 0;
+    bottom: 0;
+   
+}
+.wrapper a:hover .to-diagonal{
+    height: 70px;
+    width: 220px;
+    background:   #50bda1;
+    transition: 0.8s;
+}
